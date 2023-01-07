@@ -1,0 +1,114 @@
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    margin: 50px;
+    font-size: 26px;
+}
+
+.block {
+    display: inline-block;
+    padding: 25px;
+    background: grey;
+}
+
+.block:hover .link {
+    opacity: 1;
+    visibility: visible;
+}
+
+.link {
+    color: aliceblue;
+    font-size: 26px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.link:hover {
+    color: black;
+}
+
+.link:active {
+    color: chocolate;
+}
+
+.t1, .t2 {
+    display: none;
+}
+
+.t1:target, .t2:target {
+    display: block;
+}
+
+.text {
+    margin-top: 25px;
+}
+
+/*.text .txt1:first-of-type {
+    color: red;
+}*/
+
+.text *:not(:last-child) {
+    color: darkseagreen;
+}
+
+.content, .content2 {
+    margin-top: 25px;
+    max-width: 50%;
+}
+
+.content p:first-line {
+    color: red;
+}
+
+.content2 p::before {
+    content: "2";
+}
+
+.list {
+    margin-top: 25px;
+}
+
+.list li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    vertical-align: top;
+    margin: 7px 10px 0 -30px;
+}
+
+.list li {
+    padding-left: 30px;
+}
+
+.list li:hover::before {
+    border-radius: 50%;
+}
+
+.list li:hover::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    vertical-align: top;
+}
+
+.items {
+    margin-top: 20px;
+}
+
+.items li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.items ol{
+    counter-reset: item;
+}
+.items li::before {
+    counter-increment: item;
+    content: counter(item) ")";
+    display: inline-block;
+    margin-right: 20px;
+}
