@@ -1,0 +1,28 @@
+.wrapper {
+    min-height: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.header {
+    margin-bottom: 5px;
+    padding: 5px 20px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #484848;
+    background-color: #b7b7b7;
+}
+
+.block-1 .content .img {
+    width: 50%;
+    height: 200px;
+    background: url("https://picsum.photos/200/200") center no-repeat, green url("https://picsum.photos/200/100") right no-repeat;
+}
+
+.block:not(:first-child) {
+    margin-top: 10px;
+}
+
+.block-2 .content {
+
+}
