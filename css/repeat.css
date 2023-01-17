@@ -13,6 +13,11 @@
     background-color: #b7b7b7;
 }
 
+.block {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
 .block-1 .content .img {
     width: 50%;
     height: 200px;
@@ -63,6 +68,7 @@
 
 .b2-header {
     margin-top: 15px;
+    min-height: 50px;
     /*width: 50%;*/
     position: relative;
     display: flex;
@@ -87,4 +93,90 @@
     position: absolute;
     padding: 0 10px;
 }
+
+.content-3 *:last-child {
+    margin-bottom: 0;
+}
+
+.par {
+    margin: 0 0 20px 0;
+}
+
+.b-3-link {
+    display: inline-block;
+    margin: 0 0 30px 0;
+}
+
+.content-4 li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.content-4 li {
+    background: url("https://picsum.photos/100/100") right top / 29px no-repeat;
+    padding-right: 35px;
+}
+
+.content-5 {
+    max-width: 1020px;
+    margin: 0 auto;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 0;
+    background-color: #02133C;
+    color: white;
+}
+
+.content-5 .item {
+    display: inline-block;
+    width: 25%;
+    padding: 0 24px 0 0;
+    font-size: 16px;
+}
+
+.content-5 .item_img {
+    display: inline-block;
+    margin-right: 11px;
+    width: 76px;
+    height: 76px;
+}
+
+.img-1 {
+    background: url("../img/1.png") center / 100% no-repeat;
+}
+
+.img-2 {
+    background: url("../img/2.png") center / 100% no-repeat;
+}
+
+.img-3 {
+    background: url("../img/3.png") center / 100% no-repeat;
+}
+
+.img-4 {
+    background: url("../img/4.png") center / 100% no-repeat;
+}
+
+.content-5 {
+    padding: 25px 0;
+}
+
+.content-5 .item_body {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content-5 .item_title {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 42px;
+    color: #C40B0B;
+}
+
+.content-5 .item_text {
+    max-width: 130px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #F5F5F5;
+
+}
+
 
