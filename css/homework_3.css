@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Black.woff2') format('woff2'),
+    url('../font/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Bold.woff2') format('woff2'),
+    url('../font/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Regular.woff2') format('woff2'),
+    url('../font/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.wrap {
+    width: 1020px;
+    margin: 300px auto 0;
+    font-family: Roboto, Arial, sans-serif;
+    outline: 1px #dadada solid;
+}
+
+.block {
+    margin: 0 0 33px 0;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #5D62B5;
+}
+
+.block::before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 17px;
+    height: 24px;
+    margin-right: 16px;
+    background: url("../img/mark.png") center / 170% no-repeat;
+}
+
+.header {
+    margin: 0 0 68px 0;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 900;
+    color: #000000;
+}
+
+.items {
+    font-size: 0;
+}
+
+.item {
+    display: inline-block;
+    width: 365px;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.item:not(:last-child) {
+    padding-right: 24px;
+}
+
+.item-image {
+    display: inline-block;
+    width: 86px;
+    outline: black solid 1px;
+    vertical-align: top;
+}
+
+.item-image::before {
+    content: '';
+    display: block;
+    width: 86px;
+    height: 63px;
+    vertical-align: top;
+    background: url("../img/dog_love.png") center / 100% no-repeat;
+}
+
+.item_content {
+    display: inline-block;
+    width: 235px;
+}
