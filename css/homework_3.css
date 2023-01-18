@@ -34,7 +34,7 @@
     width: 1020px;
     margin: 300px auto 0;
     font-family: Roboto, Arial, sans-serif;
-    outline: 1px #dadada solid;
+    /*    outline: 1px #dadada solid;*/
 }
 
 .block {
@@ -71,32 +71,43 @@
 
 .item {
     display: inline-block;
-    width: 365px;
+    width: 33.33%;
     vertical-align: top;
     font-size: 16px;
+}
+
+.item:nth-child(1) {
+    background: url("../img/dog_love.png") left top / 63px no-repeat;
+}
+
+.item:nth-child(2) {
+    background: url("../img/dog_vet.png") left top / 63px no-repeat;
+}
+
+.item:nth-child(3) {
+    background: url("../img/dog_stream.png") left top / 63px no-repeat;
 }
 
 .item:not(:last-child) {
     padding-right: 24px;
 }
 
-.item-image {
-    display: inline-block;
-    width: 86px;
-    outline: black solid 1px;
-    vertical-align: top;
-}
-
-.item-image::before {
-    content: '';
-    display: block;
-    width: 86px;
-    height: 63px;
-    vertical-align: top;
-    background: url("../img/dog_love.png") center / 100% no-repeat;
-}
-
 .item_content {
-    display: inline-block;
-    width: 235px;
+    padding-left: 86px;
+}
+
+.item_title {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    color: #F2726F;
+    margin-bottom: 20px;
+}
+
+.item_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;
 }
